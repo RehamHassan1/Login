@@ -3,6 +3,7 @@ import 'package:flutter_application_5/share/cubit.dart';
 import 'package:flutter_application_5/share/single_bloc_opserve.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'log.dart';
 import 'login.dart';
 
 void main() {
@@ -30,12 +31,13 @@ class _MyappState extends State<Myapp> {
         ),*/
       ],
       child: MaterialApp(
-        theme: ThemeData(
+      /*  theme: ThemeData(
             primaryColor: Colors.deepPurple,
             colorScheme:
-                ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)),
+               ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)
+               ),*/
         debugShowCheckedModeBanner: false,
-        home: Login(),
+        home: Log(),
       ),
     );
   }
